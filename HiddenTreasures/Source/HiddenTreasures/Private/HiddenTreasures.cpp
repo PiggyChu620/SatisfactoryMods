@@ -16,6 +16,7 @@ DEFINE_LOG_CATEGORY(LogHiddenTreasures);
 
 void FHiddenTreasuresModule::StartupModule()
 {
+	
 	//SUBSCRIBE_METHOD(UFGFoliageLibrary::GetValidInventoryStacks, [&](auto& scope, UFGFoliageResourceUserData* foliageUserData, uint32 randomSeed)
 	//	{
 	//		TArray<FInventoryStack> theStacks = scope(foliageUserData, randomSeed);

@@ -172,6 +172,14 @@ float UWeaponUpgradesBPFL::GetStunSpearDamage(AFGEquipmentStunSpear* ammo, int i
 	return ammo->mDamageTypes[index]->mDamageAmount;
 }
 
+TArray<UActorComponent*> UWeaponUpgradesBPFL::GetComponents(AActor* actor)
+{
+	TArray<UActorComponent*> components;
+	actor->GetComponents(components, true);
+	return components;
+}
+
+
 //UFGDotComponent* UWeaponUpgradesBPFL::MakeFGDotComponent(TSubclassOf<UFGDamageOverTime> dot)
 //{
 //	UFGDotComponent* comp = new UFGDotComponent();

@@ -4,6 +4,7 @@
 
 #include <CoreMinimal.h>
 #include <Kismet/BlueprintFunctionLibrary.h>
+#include <Components/ActorComponent.h>
 #include "GameFramework/Actor.h"
 #include "Components/SphereComponent.h"
 #include "FGProjectile.h"
@@ -88,6 +89,6 @@ class WEAPONUPGRADES_API UWeaponUpgradesBPFL : public UBlueprintFunctionLibrary
 	UFUNCTION(BlueprintCallable, Category = "Weapon Upgrades BPFL")
 	static float GetStunSpearDamage(AFGEquipmentStunSpear* ammo, int index);
 
-	/*UFUNCTION(BlueprintCallable, Category = "Weapon Upgrades BPFL")
-	static UFGDotComponent* MakeFGDotComponent(TSubclassOf<UFGDamageOverTime> dot);*/
+	UFUNCTION(BlueprintCallable, Category = "Weapon Upgrades BPFL")
+	static TArray<UActorComponent*> GetComponents(AActor* actor);
 };

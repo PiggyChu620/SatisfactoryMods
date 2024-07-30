@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "Modules/ModuleManager.h"
 
-DECLARE_LOG_CATEGORY_EXTERN(LogHiddenTreasures, Verbose, All);
+DECLARE_LOG_CATEGORY_EXTERN(LogHiddenTreasures, Display, All);
 
 class FHiddenTreasuresModule : public IModuleInterface
 {
