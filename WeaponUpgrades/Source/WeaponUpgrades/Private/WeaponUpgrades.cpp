@@ -4,6 +4,8 @@
 
 #define LOCTEXT_NAMESPACE "FWeaponUpgradesModule"
 
+DEFINE_LOG_CATEGORY(LogWeaponUpgrades);
+
 void FWeaponUpgradesModule::StartupModule()
 {
 	// This code will execute after your module is loaded into memory; the exact timing is specified in the .uplugin file per-module
